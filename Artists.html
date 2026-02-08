@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony Hub - Artists</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2d2d2d 0%, #ff6f3c 50%, #2d2d2d 100%);
+            color: #233D4c;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #233D4c;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6b6b;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .artist-profile {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .artist-image {
+            min-width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .artist-info {
+            flex: 1;
+        }
+
+        .artist-info h2 {
+            color: #ffd700;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .artist-info p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .genre-tags {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .tag {
+            background-color: rgba(255, 215, 0, 0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            color: #ccc;
+        }
+
+        @media (max-width: 768px) {
+            .artist-profile {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Artists.html">Artists</a></li>
+            <li><a href="Albums.html">Albums</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Our Featured Artists</h1>
+        <p>Meet the talented musicians behind the music</p>
+    </header>
+
+    <div class="container">
+        <div class="artist-profile">
+            <img src="pics/Post-Malone.webp" alt="Post Malone" style="min-width: 200px; height: 200px; border-radius: 50%; object-fit: cover;">
+            <div class="artist-info">
+                <h2>Post Malone</h2>
+                <p><strong>Genre:</strong> Rap Rock</p>
+                <p>Post Malone (Austin Richard Post), born July 4, 1995, is a prominent American singer, songwriter, and producer known for blending genres like pop, hip-hop, country, and rock</p>
+                <div class="genre-tags">
+                    <span class="tag">Trap</span>
+                    <span class="tag">Hip-Hop</span>
+                    <span class="tag">Pop</span>
+                </div>
+                <audio controls style="width: 100%; margin-top: 1rem;">
+                    <source src="Audio/Post_Malone_-_Take_What_You_Want_feat.Ozzy_Osbourne_Travis_Scott_(mp3.pm).mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <div class="artist-profile">
+            <img src="pics/Coldplay.webp" alt="Coldplay" style="min-width: 200px; height: 200px; border-radius: 50%; object-fit: cover;">
+            <div class="artist-info">
+                <h2>Coldplay</h2>
+                <p><strong>Genre:</strong> Rock, Indie </p>
+                <p>Coldplay is a globally renowned British rock band formed in London in 1996 (officially 1997/1998 in various accounts) by Chris Martin (vocals/piano), Jonny Buckland (guitar), Guy Berryman (bass), and Will Champion (drums). Known for melodic, piano-driven anthems and massive stadium tours, they have sold over 100 million albums worldwide. </p>
+                <div class="genre-tags">
+                    <span class="tag">Rock</span>
+                    <span class="tag">Indie</span>
+                    <span class="tag">Alternative</span>
+                </div>
+                <audio controls style="width: 100%; margin-top: 1rem;">
+                    <source src="Audio/Cold_play_-_Viva_la_Vida_Bia2Rap.Com_(mp3.pm).mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <div class="artist-profile">
+            <img src="pics/Akeboshi.jpg" alt="Akeboshi" style="min-width: 200px; height: 200px; border-radius: 50%; object-fit: cover;">
+            <div class="artist-info">
+                <h2>Akeboshi</h2>
+                <p><strong>Genre:</strong> Indie Pop, Pop</p>
+                <p>A veteran musician with over 20 years of experience, Kwame Rhythm preserves the rich tradition of Highlife music while innovating with jazz influences. He's a cultural icon and mentor to many young artists.</p>
+                <div class="genre-tags">
+                    <span class="tag">Folk Pop</span>
+                    <span class="tag">Soft Rock</span>
+                    <span class="tag">Traditional</span>
+                </div>
+                <audio controls style="width: 100%; margin-top: 1rem;">
+                    <source src="Audio/Wind_-_Akeboshi_(mp3.pm).mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <div class="artist-profile">
+            <img src="pics/Young-The-Gaint.webp" alt="Young The Gaint" style="min-width: 200px; height: 200px; border-radius: 50%; object-fit: cover;">
+            <div class="artist-info">
+                <h2>Young The Gaint</h2>
+                <p><strong>Genre:</strong> Pop Rock, Indie Rock</p>
+                <p>Young the Giant is an American alternative rock band formed in 2004 in Irvine, California, known for their blending of indie pop and indie rock with California-inspired sounds. Formerly known as The Jakes, the band adopted their current name in 2009 and gained significant traction with their 2010 self-titled debut album. </p>
+                <div class="genre-tags">
+                    <span class="tag">Pop Rock</span>
+                    <span class="tag">Indie Rock </span>
+                    <span class="tag">Lesser Extent</span>
+                </div>
+                <audio controls style="width: 100%; margin-top: 1rem;">
+                    <source src="Audio/Young_the_Giant_-_Mind_Over_Matter_Reprise_(mp3.pm).mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <div class="artist-profile">
+            <img src="pics/Don-Toliver.webp" alt="Don Toliver" style="min-width: 200px; height: 200px; border-radius: 50%; object-fit: cover;">
+            <div class="artist-info">
+                <h2>Don Toliver</h2>
+                <p><strong>Genre:</strong> Trap, Hip-Hop</p>
+                <p>Yaa Soul's smooth vocals and heartfelt lyrics have earned her a dedicated following. Her debut album went platinum, establishing her as one of the most promising R&B artists of her generation.</p>
+                <div class="genre-tags">
+                    <span class="tag">Hip-Hop</span>
+                    <span class="tag">Trap</span>
+                    <span class="tag">Rock</span>
+                </div>
+                <audio controls style="width: 100%; margin-top: 1rem;">
+                    <source src="Audio/DON_TOLIVER_-_TORE_UP_but_VERSION_WE_ALL_WANTED_(mp3.pm).mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Harmony Hub. All Rights Reserved.</p>
+        <p>Bringing You the Best Music Experience</p>
+    </footer>
+</body>
+</html>

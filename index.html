@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony Hub - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2d2d2d 0%, #ff6f3c 50%, #2d2d2d 100%);
+            color: #233D4c;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color:#233D4c;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6b6b;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            font-size: 1.3rem;
+            color: #233D4c;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .featured-section {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .featured-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #233D4c;
+        }
+
+        .music-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .music-card {
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .music-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .music-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .music-card h3 {
+            margin-bottom: 0.5rem;
+            color: yellow;
+        }
+
+        .placeholder-img {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Artists.html">Artists</a></li>
+            <li><a href="Albums.html">Albums</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>🎵 Harmony Hub 🎵</h1>
+        <p>Your Ultimate Music Destination</p>
+    </header>
+
+    <div class="container">
+        <section class="featured-section">
+            <h2>Featured Artists</h2>
+            <div class="music-grid">
+                <div class="music-card">
+                    <img src="pics/Akeboshi.jpg" alt="Akeboshi">
+                    <h3>Akeboshi</h3>
+                    <p>Japanese Sensation</p>
+                </div>
+                <div class="music-card">
+                    <img src="/pics/Coldplay.webp" alt="Coldplay">
+                    <h3>Coldplay</h3>
+                    <p>Rock Band</p>
+                </div>
+                <div class="music-card">
+                   <img src="pics/Post-Malone.webp" alt="Post Malone">
+                    <h3>Post Malone</h3>
+                    <p>Singer</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-section">
+            <h2>Popular Releases</h2>
+            <div class="music-grid">
+                <div class="music-card">
+                    <img src="pics/aurora.jpg" alt="Aurora">
+                    <h3>Summer Vibes 2026</h3>
+                    <p>Various Artists</p>
+                    <audio controls style="width: 100%; margin-top: 1rem;">
+                        <source src="Audio/Aurora-Runaway.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="music-card">
+                    <img src="pics/Don-Toliver.webp" alt="Don Toliver">
+                    <h3>Rhythm of the Night</h3>
+                    <p>Don Toliver</p>
+                    <audio controls style="width: 100%; margin-top: 1rem;">
+                        <source src="Audio/DON_TOLIVER_-_TORE_UP_but_VERSION_WE_ALL_WANTED_(mp3.pm).mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Harmony Hub. All Rights Reserved.</p>
+        <p>Bringing You the Best Music Experience</p>
+    </footer>
+</body>
+</html>

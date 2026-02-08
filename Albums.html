@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony Hub - Albums</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2d2d2d 0%, #ff6f3c 50%, #2d2d2d 100%);
+            color: #233D4c;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #233D4c;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6b6b;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .albums-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .album-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .album-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .album-cover {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .album-info h2 {
+            color: #ffd700;
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .album-info p {
+            margin-bottom: 0.5rem;
+            color: #e0e0e0;
+        }
+
+        .track-list {
+            margin-top: 1rem;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .track-list h3 {
+            color: #ffd700;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .track-list ol {
+            margin-left: 1.5rem;
+        }
+
+        .track-list li {
+            margin-bottom: 0.3rem;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Artists.html">Artists</a></li>
+            <li><a href="Albums.html">Albums</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Latest Albums</h1>
+        <p>Discover our newest music collections</p>
+    </header>
+
+    <div class="container">
+        <div class="albums-grid">
+            <div class="album-card">
+                <img src="pics/aurora.jpg" alt="Aurora Albumcover" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                <div class="album-info">
+                    <h2>All My Demons Greeting Me as a Friend</h2>
+                    <p><strong>Artist:</strong> Aurora</p>
+                    <p><strong>Released:</strong> June 2016</p>
+                    <p><strong>Genre:</strong> ElectroPop</p>
+                    <audio controls style="width: 100%; margin-top: 1rem;">
+                        <source src="Audio/Aurora-Runaway.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div class="track-list">
+                        <h3>Track List:</h3>
+                        <ol>
+                            <li>Conqueror</li>
+                            <li>Running with the Wolves</li>
+                            <li>I Went Too Far</li>
+                            <li>Winter Bird</li>
+                            <li>Forever Young</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="album-card">
+                <img src="pics/Post-Malone.webp" alt="Post Malone" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                <div class="album-info">
+                    <h2> Hollywood's Bleeding</h2>
+                    <p><strong>Artist:</strong> Post Malone</p>
+                    <p><strong>Released:</strong> October 2019</p>
+                    <p><strong>Genre:</strong> Rap rock</p>
+                    <audio controls style="width: 100%; margin-top: 1rem;">
+                        <source src="Audio/Post_Malone_-_Take_What_You_Want_feat.Ozzy_Osbourne_Travis_Scott_(mp3.pm).mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div class="track-list">
+                        <h3>Track List:</h3>
+                        <ol>
+                            <li>Circles</li>
+                            <li>Goodbyes (feat. Young Thug)</li>
+                            <li>Enemies (feat. DaBaby)</li>
+                            <li>Die For Me (feat. Future & Halsey) </li>
+                            <li>Wow</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="album-card">
+                <img src="pics/Coldplay.webp" alt="Coldplay" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                <div class="album-info">
+                    <h2> Viva la Vida</h2>
+                    <p><strong>Artist:</strong> Coldplay</p>
+                    <p><strong>Released:</strong> June 2008</p>
+                    <p><strong>Genre:</strong> Artrock</p>
+                    <audio controls style="width: 100%; margin-top: 1rem;">
+                        <source src="Audio/Cold_play_-_Viva_la_Vida_Bia2Rap.Com_(mp3.pm).mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div class="track-list">
+                        <h3>Track List:</h3>
+                        <ol>
+                            <li>Life in Technicolor</li>
+                            <li>Cemeteries of London</li>
+                            <li>Lost!</li>
+                            <li>Lovers in Japan / Reign of Love</li>
+                            <li>Viva la Vida</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="album-card">
+                <img src="pics/Akeboshi.jpg" alt="Akeboshi" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                <div class="album-info">
+                    <h2>Stoned Town</h2>
+                    <p><strong>Artist:</strong> Akeboshi</p>
+                    <p><strong>Released:</strong> June 2002</p>
+                    <p><strong>Genre:</strong> Folk/Pop</p>
+                    <audio controls style="width: 100%; margin-top: 1rem;">
+                        <source src="Audio/Wind_-_Akeboshi_(mp3.pm).mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div class="track-list">
+                        <h3>Track List:</h3>
+                        <ol>
+                            <li>Night and Day</li>
+                            <li>Hey There</li>
+                            <li>Wind</li>
+                            <li>Summer Nights</li>
+                            <li>No Wish</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="album-card">
+                <img src="pics/Don-Toliver.webp" alt="Don Toliver" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                <div class="album-info">
+                    <h2>Hardstone Psycho</h2>
+                    <p><strong>Artist:</strong> Don Toliver</p>
+                    <p><strong>Released:</strong> October 2024</p>
+                    <p><strong>Genre:</strong> Hip Pop/Rap</p>
+                    <audio controls style="width: 100%; margin-top: 1rem;">
+                        <source src="Audio/DON_TOLIVER_-_TORE_UP_but_VERSION_WE_ALL_WANTED_(mp3.pm).mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div class="track-list">
+                        <h3>Track List:</h3>
+                        <ol>
+                            <li>Kryptonite</li>
+                            <li>Brother Stone (feat. Kodak Black)</li>
+                            <li>Bandit</li>
+                            <li>Inside (feat. Travis Scott)</li>
+                            <li>4x4</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="album-card">
+                <img src="pics/Imagine-Dragons.webp" alt="Imagine Dragons" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                <div class="album-info">
+                    <h2>Curse</h2>
+                    <p><strong>Artist:</strong> Imagine Dragons</p>
+                    <p><strong>Released:</strong> September 2008</p>
+                    <p><strong>Genre:</strong> Indie Rock/Pop</p>
+                    <audio controls style="width: 100%; margin-top: 1rem;">
+                        <source src="Audio/Imagine_Dragons_-_Curse_(mp3.pm).mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div class="track-list">
+                        <h3>Track List:</h3>
+                        <ol>
+                            <li>Drive</li>
+                            <li>Cover Up</li>
+                            <li>I Need A Minute</li>
+                            <li>Uptight</li>
+                            <li>Hole Inside Our Chest</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Harmony Hub. All Rights Reserved.</p>
+        <p>Bringing You the Best Music Experience</p>
+    </footer>
+</body>
+</html>
